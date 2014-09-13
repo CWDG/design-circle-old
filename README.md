@@ -1,6 +1,6 @@
 # Design Circle
 
-The Design Circle club (referred to as DC from here forward) currently does not have a truly functional site, though there is a little something [here][ dcs ].
+The Design Circle club (referred to as DC from here forward) currently does not have a truly functional site, though there is a little something [here][dcs].
 
 [dsc]: http://design.osu.edu/undergrad/co-curricular/design-circle
 
@@ -37,7 +37,7 @@ The Design Circle club (referred to as DC from here forward) currently does not 
     * Linux/BSD: use your package manager, it should be pretty up-to-date
     * Otherwise: Visit [the sort-of official website][gs] and download from there
 * Node.js
-    * Mac/Linux: I use NVM to manage my Node versions. If that sounds good to you, there's an install script [on thier Github page][nvm]
+    * Mac/Linux: I use NVM to manage my Node versions. If that sounds good to you, there's an install script [on their Github page][nvm]
     * Otherwise: Visit [Node's website][node] and click the big, green "Install" button
 
 [gs]: http://git-scm.com
