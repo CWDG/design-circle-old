@@ -12,4 +12,4 @@
 
 # TECHNOLOGY COLOPHON
 
-    MongoDB, Express.js, AngualarJS, Node.js
+    MongoDB, Express.js, AngularJS, Node.js
