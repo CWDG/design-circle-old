@@ -7,7 +7,7 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 var validateEventName = function(name) {
-	return name.length() > 0;
+	return name.length > 0;
 };
 
 /**
@@ -26,7 +26,8 @@ var EventSchema = new Schema({
 		default: ''
 	},
 	date: {
-		type: Date
+		type: Date,
+		default: Date.now
 	},
 	updated: {
 		type: Date
