@@ -12,6 +12,7 @@ exports.index = function(req, res) {
 exports.landing = function(req, res) {
 	res.render('landing', {
     user: req.user || null
+<<<<<<< HEAD
   });
 };
 
