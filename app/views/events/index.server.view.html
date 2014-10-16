@@ -1,0 +1,29 @@
+<html ng-app="eventIndex">
+<body ng-controller="indexCtrl">
+<p>{{test}}</p>
+<ul>
+	<li ng-repeat="event in events">
+		<b>{{event.name}}</b> - {{event.date}}
+	</li>
+</ul>
+</body>
+
+<script src="lib/angular/angular.min.js"></script>
+
+<script>
+var app = angular.module('eventIndex', []);
+app.controller('indexCtrl', ['$scope', '$http', function($scope, $http) {
+	$scope.test = "Test";
+	$http({
+		method: 'get',
+		url: 'events/get'
+	}).success(function(response) {
+		$scope.events = response;
+		if (!$scope.$$phase) {
+			$scope.$apply();
+		}
+	});
+}]);
+
+</script>
+</html>
