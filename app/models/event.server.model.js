@@ -23,7 +23,7 @@ var EventSchema = new Schema({
 	description: {
 		type: String,
 		trim: true,
-		default: ''
+		default: 'Description'
 	},
 	date: {
 		type: Date,
