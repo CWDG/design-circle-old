@@ -10,7 +10,8 @@ angular.module('events').controller('EventsController', ['$scope', '$stateParams
 		$scope.create = function() {
 			// Create new Event object
 			var event = new Events ({
-				name: this.name
+				name: this.name,
+				date: moment(this.date).format("YYYY-MM-DDTHH:mm:ssZZ")
 			});
 
 			// Redirect after save
@@ -61,6 +62,11 @@ angular.module('events').controller('EventsController', ['$scope', '$stateParams
 			$scope.event = Events.get({ 
 				eventId: $stateParams.eventId
 			});
+		};
+
+		//Convert date
+		$scope.convertDate = function(isodate) {
+			return moment(isodate).format("MMM Do YYYY, h:mm:ss a");
 		};
 	}
 ]);
