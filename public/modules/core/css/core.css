@@ -6,18 +6,64 @@ body {
   background:         linear-gradient(90deg, #485563 10%, #29323c 90%); /* W3C */
 }
 
-.home.title {
-  color: #F6F6F6;
-  font-size: 10em;
-  font-weight: lighter;
+/* Full height */
+.container, .ng-scope, .home.full-height {
+  height: 100%;
 }
 
-.home.logo {
-  width: 100%;
+/* Vertically centered */
+.home.title, .home.link-container-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+.home.title {
+  color: #EEE;
+  font-size: 10em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.home.link-container {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home.link-box {
+  margin-top: 15px;
+  height: 150px;
+  width: 150px;
+  line-height: 150px;
+
+  border-radius: 50%;
+  border: 3px solid #EEE;
+
+  background: #75af41;
+
+  text-align: center;
+  font-size: 2em;
+  color: #EEE;
+  text-decoration: none;
+}
+
+.home.link-box:hover {
+  transition: background-color 0.5s ease;
+  transition: border 0.5s ease;
+  transition: color 0.5s ease;
+  background-color: #EEE;
+  color: #75AF41;
+  border: 3px solid #75AF41;
+}
+
+.home.link {
+  text-decoration: none;
 }
 
 .content {
-	margin-top: 50px;
+	/* margin-top: 50px; */
+  height: 100vh;
 }
 .undecorated-link:hover {
 	text-decoration: none;
