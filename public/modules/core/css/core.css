@@ -1,5 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,300);
+
+body {
+  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #485563 10%, #29323c 90%); /* W3C */
+
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+}
+
+.vert-centered {
+  position: relative;
+  top: 50%;
+  transform:          translateY(-60%);
+  -webkit-transform:  translateY(-60%); /* SAFARI!!! */
+  -o-transform:       translateY(-60%);
+}
+
+/* Full height */
+.container, .ng-scope, .home.full-height {
+  height: 100%;
+}
+
+.home.title {
+  color: #EEE;
+  font-size: 10em;
+  font-weight: lighter;
+  text-align: center;
+
+  margin-top: 0;
+}
+
+.home.link-list {
+  margin: 40px 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.home.link-list li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.home.link-box {
+  height: 150px;
+  width: 150px;
+  line-height: 150px;
+
+  border-radius: 50%;
+  border: 3px solid #EEE;
+
+  background: #75af41;
+
+  text-align: center;
+  font-size: 2em;
+  color: #EEE;
+  text-decoration: none;
+
+  display: inline-block;
+}
+
+.home.link-box:hover {
+  transition: background-color 0.5s ease;
+  transition: border 0.5s ease;
+  transition: color 0.5s ease;
+  background-color: #EEE;
+  color: #75AF41;
+  border: 3px solid #75AF41;
+}
+
+.home.link {
+  text-decoration: none;
+}
+
 .content {
-	margin-top: 50px;
+	/* margin-top: 50px; */
+  height: 100vh;
 }
 .undecorated-link:hover {
 	text-decoration: none;

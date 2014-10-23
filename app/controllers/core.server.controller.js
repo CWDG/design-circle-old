@@ -8,3 +8,9 @@ exports.index = function(req, res) {
 		user: req.user || null
 	});
 };
+
+exports.landing = function(req, res) {
+	res.render('landing', {
+		user: req.user || null
+	});
+};
