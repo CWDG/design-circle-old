@@ -6,6 +6,16 @@ body {
   background:         linear-gradient(90deg, #485563 10%, #29323c 90%); /* W3C */
 }
 
+.home.title {
+  color: #F6F6F6;
+  font-size: 10em;
+  font-weight: lighter;
+}
+
+.home.logo {
+  width: 100%;
+}
+
 .content {
 	margin-top: 50px;
 }
