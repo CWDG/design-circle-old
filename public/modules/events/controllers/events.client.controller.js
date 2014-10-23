@@ -3,6 +3,7 @@
 // Events controller
 angular.module('events').controller('EventsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Events',
 	function($scope, $stateParams, $location, Authentication, Events ) {
+
 		$scope.authentication = Authentication;
 
 		// Create new Event
