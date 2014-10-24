@@ -69,5 +69,13 @@ angular.module('events').controller('EventsController', ['$scope', '$stateParams
 		$scope.convertDate = function(isodate) {
 			return moment(isodate).format("MMM Do YYYY, h:mm:ss a");
 		};
+
+		//truncate description
+		$scope.shortDescription = function(description) {
+			if(description.length > 50){
+				return description.substring(0,50) + "..."
+			}
+			return description
+		}
 	}
 ]);
