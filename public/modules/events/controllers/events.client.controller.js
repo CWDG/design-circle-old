@@ -11,7 +11,8 @@ angular.module('events').controller('EventsController', ['$scope', '$stateParams
 			// Create new Event object
 			var event = new Events ({
 				name: this.name,
-				date: moment(this.date).format("YYYY-MM-DDTHH:mm:ssZZ")
+				date: moment(this.date).format("YYYY-MM-DDTHH:mm:ssZZ"),
+				description: this.description
 			});
 
 			// Redirect after save
