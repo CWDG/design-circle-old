@@ -1,5 +1,5 @@
 .grid {
-  padding: 100px 20px 100px 20px;
+  padding: 20px 20px 20px 20px;
   max-width: 1300px;
   margin: 0 auto;
   list-style: none;
@@ -10,7 +10,7 @@
   display: inline-block;
   width: 440px;
   margin: 0;
-  padding: 20px;
+  padding: 85px 20px 20px 20px;
   text-align: left;
   position: relative;
 }
