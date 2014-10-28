@@ -1,5 +1,5 @@
 .grid {
-  padding: 20px 20px 100px 20px;
+  padding: 100px 20px 100px 20px;
   max-width: 1300px;
   margin: 0 auto;
   list-style: none;
@@ -31,8 +31,8 @@
   top: 0;
   left: 0;
   padding: 20px;
-  background: #2c3f52;
-  color: #ed4e6e;
+  background: #75AF41;
+  color: white;
 }
 
 .grid figcaption h3 {
