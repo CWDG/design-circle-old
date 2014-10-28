@@ -1,12 +1,9 @@
 <section data-ng-controller="HomeController">
-  <section class="home vert-centered">
-    <h1 class="home title">about</h1>
-  </section>
 
-  <ul class="grid cs-style-1">
+  <ul class="grid cs-style-2">
     <li>
       <figure>
-        <img src="http://placekitten.com/g/200/300" alt="kitten">
+        <img src="http://tympanus.net/Tutorials/CaptionHoverEffects/images/2.png" alt="kitten">
         <figcaption>
           <h3>Captain Furball</h3>
           <span>Cute little fuzzball with a whole lotta spunk and heart.</span>
@@ -29,83 +26,3 @@
 
 </section>
 
-<style>
-  .grid {
-      padding: 20px 20px 100px 20px;
-      max-width: 1300px;
-      margin: 0 auto;
-      list-style: none;
-      text-align: center;
-  }
-   
-  .grid li {
-      display: inline-block;
-      width: 440px;
-      margin: 0;
-      padding: 20px;
-      text-align: left;
-      position: relative;
-  }
-
-.grid figure {
-    margin: 0;
-    position: relative;
-}
-
-.grid figure img {
-    max-width: 100%;
-    display: block;
-    position: relative;
-}
-
-.grid figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    background: #2c3f52;
-    color: #ed4e6e;
-}
-
-.grid figcaption h3 {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
- 
-.grid figcaption span:before {
-    content: 'by ';
-}
- 
-.grid figcaption a {
-    text-align: center;
-    padding: 5px 10px;
-    border-radius: 2px;
-    display: inline-block;
-    background: #ed4e6e;
-    color: #fff;
-}
-
-.cs-style-2 figure img {
-    z-index: 10;
-    transition: transform 0.4s;
-}
- 
-.no-touch .cs-style-2 figure:hover img,
-.cs-style-2 figure.cs-hover img {
-    transform: translateY(-90px);
-}
-
-.cs-style-2 figcaption {
-    height: 90px;
-    width: 100%;
-    top: auto;
-    bottom: 0;
-}
-
-.cs-style-2 figcaption a {
-    position: absolute;
-    right: 20px;
-    top: 30px;
-}
-</style>
