@@ -1,5 +1,7 @@
 'use strict';
 
+var calendar;
+
 // Events controller
 angular.module('events').controller('EventsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Events',
 	function($scope, $stateParams, $location, Authentication, Events ) {
@@ -53,9 +55,19 @@ angular.module('events').controller('EventsController', ['$scope', '$stateParams
 			});
 		};
 
+
 		// Find a list of Events
 		$scope.find = function() {
-			$scope.events = Events.query();
+			var eventAction = Events.query();
+			eventAction.$promise.then(function(eventList) {
+				$scope.events = eventList;
+				for (var i in $scope.events) {
+					$scope.events[i].start = moment($scope.events[i].date).toDate();
+					$scope.events[i].title = $scope.events[i].name;
+				}
+				$scope.eventSources.push($scope.events);
+				if (!$scope.$$phase) $scope.$apply();
+			});
 		};
 
 		// Find existing Event
@@ -77,5 +89,8 @@ angular.module('events').controller('EventsController', ['$scope', '$stateParams
 			}
 			return description
 		}
+
+		//Calendar stuff
+		$scope.eventSources = [];
 	}
 ]);
