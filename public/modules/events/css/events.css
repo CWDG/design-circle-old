@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:100,400,300);
 
-body {
+ body {
   background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%); /* FF3.6+ */
   background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%); /* IE10 */
@@ -9,7 +9,7 @@ body {
 
   font-family: Raleway, Helvetica, Arial, sans-serif;
 }
-  
+ 
 .page-title {
   
   color: #EEE;
@@ -18,9 +18,8 @@ body {
   text-align: center;
 }
 
-
 .list-group-item {
-  background-color: #75AF41
+  background-color: #75AF41;
 }
 
 .list-group-item-text {
@@ -33,4 +32,17 @@ body {
 
 .alert.alert-warning.text-center {
   
+}
+
+.fc-state-highlight {
+	background-color: #75AF41 !important;
+}
+
+.fc-event {
+	background-color: #75AF41 !important;
+	border-color: #75AF41 !important;
+}
+
+section {
+	color: #fff
 }
