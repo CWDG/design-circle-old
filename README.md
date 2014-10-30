@@ -1,33 +1,37 @@
 # Design Circle
+**We are using the [Shared Repository Model][srm]**
+
+[srm]: https://guides.github.com/introduction/flow/index.html
+
 
 The Design Circle club (referred to as DC from here forward) currently does not have a truly functional site, though there is a little something [here][dcs].
 
-[dsc]: http://design.osu.edu/undergrad/co-curricular/design-circle
+[dcs]: http://design.osu.edu/undergrad/co-curricular/design-circle
 
 ## Goals for the site
 
 * Landing page
-    * Simple. Gentle gradient, à la [Heroku][heroku]
-    * Club name on the left, and oversized logo adjacent on the right
-    * The three central circles of the DC logo are link to the three remaining pages, and are labeled respectively
+    * Simple. Gentle gradient
+    * Logo in the center, with the title beneath it
+    * The three central circles of the DC logo are links to the three remaining pages, and are labeled respectively
 * About page
     * Officers section, featuring a tiles of the officer's portraits, where clicking on one shows more information about that person, à la [Thoughtbot's people page][tpp]
-    * A breif section for club history
+    * A brief section for club history
     * "Contact Us"/ sign up for listserv area
 * Blog page
-    * One person per week is allowed to post (delegation needs clarification)
-    * Appears as tiles for the last 9 (flexible) posts with images as backgrounds, in something similar to [The Verge's homepage][theverge]
+    * Posts: Title, title image, and content generated with [Sir Trevor][st]
+    * One person per week is allowed to post. The admin will enter the email of the person to be given access for the week, and the link will expire in a week or when they post their article.
+    * Appears as tiles for the last 9 (flexible) posts with images as backgrounds, in something similar to the About page's officer tile layout
     * Clicking on a tile expands it to fill the width of the tiles section, and expand vertically as necessary
 * Events page
-    * Follows the general "tiles" design scheme, though appears slightly more akin to a calendar
-        * Blog posts appear in the calendar, link to blog page
-        * If there is an event or blog post, the background image for that day in the calendar view should be an image from the event/blog element
-        * Events expand to fill calendar, in a similar way to how blog posts fill the blog area
-* Bridging the Gap?  A major event for DC, may need it's own page. Alternately, the event creation page would have to be *very* powerful.
+    * Events: Title, title image, and content generated with [Sir Trevor][st]
+    * Follows the general "tiles" design scheme
+    * Blog posts appear in the calendar, link to blog "show" page
+    * If there is an event or blog post, the background for that tile is the "title image"
+    * Events expand to fill calendar, in a similar way to how blog posts fill the blog area
 
-[heroku]: http://heroku.com
+[st]: http://madebymany.github.io/sir-trevor-js/
 [tpp]: http://thoughtbot.com/people
-[theverge]: http://theverge.com
 
 ## Developer Setup
 
@@ -44,11 +48,24 @@ The Design Circle club (referred to as DC from here forward) currently does not 
 [nvm]: https://github.com/creationix/nvm
 [node]: http://nodejs.org
 
-### Setup
+### Getting setup
+
+[node]: nodejs.org
+
 1. Clone the project
-2. Use `npm install` to install dependencies
-
-We are using the [Shared Repository Model][srm]
-
-[srm]: https://guides.github.com/introduction/flow/index.html
+```bash
+git clone git@github.com:CWDG/design-circle
+```
+2. Install dependencies
+```bash
+npm install
+```
+3. Install Grunt globally
+```bash
+npm install -g grunt-cli
+```
+3. Start the server
+```bash
+grunt serve
+```
 
