@@ -53,19 +53,26 @@ The Design Circle club (referred to as DC from here forward) currently does not 
 [node]: nodejs.org
 
 1. Clone the project
-```bash
-git clone git@github.com:CWDG/design-circle
-```
+
+    ```bash
+    git clone git@github.com:CWDG/design-circle
+    ```
+
 2. Install dependencies
-```bash
-npm install
-```
+
+    ```bash
+    npm install
+    ```
+
 3. Install Grunt globally
-```bash
-npm install -g grunt-cli
-```
-3. Start the server
-```bash
-grunt serve
-```
+
+    ```bash
+    npm install -g grunt-cli
+    ```
+
+4. Start the server
+
+    ```bash
+    grunt serve
+    ```
 
