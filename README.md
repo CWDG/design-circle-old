@@ -21,11 +21,11 @@ The Design Circle club (referred to as DC from here forward) currently does not 
 * Blog page
     * Posts: Title, title image, and content generated with [Sir Trevor][st]
     * One person per week is allowed to post. The admin will enter the email of the person to be given access for the week, and the link will expire in a week or when they post their article.
-    * Appears as tiles for the last 9 (flexible) posts with images as backgrounds, in something similar to the About page's officer tile layout
+    * Appears as tiles for the last 8 (2 rows of 4) posts with images as backgrounds, in something similar to the About page's officer tile layout
     * Clicking on a tile expands it to fill the width of the tiles section, and expand vertically as necessary
 * Events page
     * Events: Title, title image, and content generated with [Sir Trevor][st]
-    * Follows the general "tiles" design scheme
+    * Follows the general "tiles" design scheme (2 rows of 4)
     * Blog posts appear in the calendar, link to blog "show" page
     * If there is an event or blog post, the background for that tile is the "title image"
     * Events expand to fill calendar, in a similar way to how blog posts fill the blog area
