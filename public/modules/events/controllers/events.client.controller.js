@@ -6,6 +6,8 @@ var calendar;
 angular.module('events').controller('EventsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Events',
 	function($scope, $stateParams, $location, Authentication, Events ) {
 
+		new SirTrevor.Editor({el: $('.js-st-instance') });
+
 		$scope.authentication = Authentication;
 
 		// Create new Event

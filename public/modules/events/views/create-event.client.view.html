@@ -1,27 +1,30 @@
 <section data-ng-controller="EventsController">
-    <div class="page-header">
-        <h1>New Event</h1>
-    </div>
-    <div class="col-md-12">
-        <form class="form-horizontal" data-ng-submit="create()" novalidate>
-            <fieldset>
-                <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
-                    <div class="controls">
-                        <input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Name" required>
+	<div class="page-header">
+		<h1>New Event</h1>
+	</div>
+	<div class="col-md-12">
+		<form class="form-horizontal" data-ng-submit="create()" novalidate>
+			<fieldset>
+				<div class="form-group">
+					<label class="control-label" for="name">Name</label>
+					<div class="controls">
+						<input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Name" required>
+						<form>
+							<textarea class="js-st-instance"></textarea>
+						</form>
 						<label class="control-label" for="date">Date</label>
 						<datetimepicker data-ng-model="date"></datetimepicker>
 						<input type="text" data-ng-model="date" style="width: 100%" readonly>
 						<textarea  data-ng-model="description" id="decription" class="form-control" placeholder="Decription"></textarea>
 					</div>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-default">
-                </div>
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-default">
+				</div>
 				<div data-ng-show="error" class="text-danger">
 					<strong data-ng-bind="error"></strong>
 				</div>
-            </fieldset>
-        </form>
-    </div>
+			</fieldset>
+		</form>
+	</div>
 </section>
