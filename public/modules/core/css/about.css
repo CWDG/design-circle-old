@@ -13,9 +13,9 @@
 
 .grid li {
   display: inline-block;
-  width: 440px;
-  margin: 0;
-  padding: 20px 20px 20px 20px;
+  width: 400px;
+  margin: -5px;
+  padding: 0;
   text-align: left;
   position: relative;
 }
