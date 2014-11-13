@@ -1,20 +1,21 @@
-.about-blurb {
-  margin: 3em 3.5em 0;
+.history-blurb {
   line-height: 1.8em;
 }
 
+img.desaturate {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 .grid {
-  padding: 20px 20px 20px 20px;
-  max-width: 1300px;
-  margin: 0 auto;
   list-style: none;
   text-align: center;
 }
 
 .grid li {
   display: inline-block;
-  width: 400px;
-  margin: -5px;
+  width: 170px;
   padding: 0;
   text-align: left;
   position: relative;
@@ -82,7 +83,7 @@
 
 .cs-style-4 figcaption {
   height: 100%;
-  width: 50%;
+  width: 100%;
   opacity: 0;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

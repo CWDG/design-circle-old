@@ -1,8 +1,9 @@
-<section data-ng-controller="HomeController">
+<section data-ng-controller="AboutController">
 
-  <h1 class="home title">about</h1>
+  <h1 class="text-center">About</h1>
 
-  <p class="title about-blurb">
+  <h2>History</h2>
+  <p class="history-blurb">
     Kitty ipsum dolor sit amet, sollicitudin sleep in the sink quis nunc give
     me fish, nunc cras nec suspendisse rhoncus fluffy fur elit puking jump.
     Claw quis elit rip the couch, sleep in the sink faucibus judging you ac
@@ -15,10 +16,15 @@
     biting, neque vestibulum suspendisse bat fluffy fur aliquam sniff.
   </p>
 
+  <h2>People</h2>
+
   <ul class="grid cs-style-4">
     <li>
       <figure>
-        <div><img src="http://lorempixel.com/400/300/cats/1" alt="kitten"></div>
+        <div>
+          <img src="http://lorempixel.com/200/200/cats/1" alt="kitten"
+          class="desaturate">
+        </div>
         <figcaption>
           <h3>Captain Furball</h3>
           <span>Cute little fuzzball with a whole lotta spunk and heart. Making the snuggie look good since 2009.</span>
@@ -28,7 +34,7 @@
 
     <li>
       <figure>
-        <div><img src="http://lorempixel.com/400/300/cats/2" alt="kitten"></div>
+        <div><img src="http://lorempixel.com/200/200/cats/2" alt="kitten" class="desaturate"></div>
         <figcaption>
           <h3>Admiral Crookshanks</h3>
           <span>Sail the high seas with the Admiral, also knows as El Capitan. Born at a very younge age. Papercut survivor.</span>
@@ -38,45 +44,41 @@
 
     <li>
       <figure>
-        <div><img src="http://lorempixel.com/400/300/cats/3" alt="kitten"></div>
+        <div><img src="http://lorempixel.com/200/200/cats/3" alt="kitten" class="desaturate"></div>
         <figcaption>
           <h3>Doogie Mouser</h3>
-          <span>Currently working towards an MBA, with an emphasis in fantasy football. Insert pretentious information about myself here.</span>
+          <span>Currently working towards an MBA, with an emphasis in fantasy football.</span>
         </figcaption>
       </figure>
     </li>
 
     <li>
       <figure>
-        <div><img src="http://lorempixel.com/400/300/cats/4" alt="kitten"></div>
+        <div><img src="http://lorempixel.com/200/200/cats/4" alt="kitten" class="desaturate"></div>
         <figcaption>
           <h3>Augustus Rockwood</h3>
-          <span>Will show ankle for five minutes of wireless. Really bad at sarcasm. Living one day at a time, with a fresh baked cookie. And a coffee. And maybe some chocolate.</span>
-        </figcaption>
-      </figure>
-    </li>
-
-    <li>
-      <figure>
-        <div><img src="http://lorempixel.com/400/300/cats/10" alt="kitten"></div>
-        <figcaption>
-          <h3>Mighty Joe Kyung</h3>
-          <span>I talk about my weird hobbies and RT a ton of cute animal pics. You're better off not following me!!</span>
-        </figcaption>
-      </figure>
-    </li>
-
-    <li>
-      <figure>
-        <div><img src="http://lorempixel.com/400/300/cats/9" alt="kitten"></div>
-        <figcaption>
-          <h3>Meatloaf</h3>
-          <span>Creator. Explorer. Food enthusiast. Web junkie. Tv fanatic. Hipster-friendly communicator.</span>
+          <span>Will show ankle for five minutes of wireless. Really bad at sarcasm. Living one day at a time.</span>
         </figcaption>
       </figure>
     </li>
 
   </ul>
+
+  <h2>Contact Us</h2>
+  <form role="form">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Your full name">
+    </div>
+
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Your email address">
+    </div>
+
+    <div class="form-group">
+      <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
 </section>
 
 
