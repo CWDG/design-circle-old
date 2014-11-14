@@ -11,11 +11,13 @@ img.desaturate {
 .grid {
   list-style: none;
   text-align: center;
+  padding: 0px;
 }
 
 .grid li {
   display: inline-block;
-  width: 170px;
+  /* width: 170px; */
+  width: 49%;
   padding: 0;
   text-align: left;
   position: relative;
@@ -27,7 +29,7 @@ img.desaturate {
 }
 
 .grid figure img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   position: relative;
 }
@@ -36,7 +38,7 @@ img.desaturate {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 15px;
   background: #75AF41;
   color: white;
 }
@@ -55,6 +57,7 @@ img.desaturate {
   -webkit-perspective-origin: 0 50%;
   -moz-perspective-origin: 0 50%;
   perspective-origin: 0 50%;
+  font-size: 0.75em;
 }
 
 .cs-style-4 figure {
@@ -116,3 +119,15 @@ img.desaturate {
   right: 20px;
 }
 
+@media (min-width: 768px) {
+  .grid li {
+    width: 24%;
+  }
+}
+
+@media (min-width: 992px) {
+  .cs-style-4 li {
+    font-size: 1em;
+  }
+
+}
