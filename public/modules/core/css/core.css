@@ -8,6 +8,7 @@ body {
   background:         linear-gradient(90deg, #485563 10%, #29323c 90%); /* W3C */
 
   font-family: Raleway, Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 .vert-centered {
