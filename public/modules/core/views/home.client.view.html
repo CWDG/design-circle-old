@@ -22,3 +22,9 @@
     </section>
   </section>
 </section>
+<section data-ng-controller="EventsController" data-ng-init="find()">
+  <h1>Events</h1>
+  <section data-ng-repeat="event in events" class="list-events">
+    <div data-ng-bind="event.name"></div>
+  </section>
+</section>
