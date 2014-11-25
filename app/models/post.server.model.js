@@ -16,14 +16,15 @@ var PostSchema = new Schema({
 		required: 'Please fill Post name',
 		trim: true
 	},
+  description: {
+    type: String,
+    trim: true,
+    default: ''
+  }
 	created: {
 		type: Date,
 		default: Date.now
-	},
-	user: {
-		type: Schema.ObjectId,
-		ref: 'User'
-	}
+  }
 });
 
 mongoose.model('Post', PostSchema);
