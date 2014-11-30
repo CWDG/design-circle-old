@@ -6,7 +6,7 @@ module.exports = {
 		description: 'An Epic Website for the Design Circle Club at OSU',
 		keywords: 'design, OSU, circle, students'
 	},
-	port: process.env.PORT || 3000,
+	port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000,
 	templateEngine: 'swig',
 	sessionSecret: 'MEAN',
 	sessionCollection: 'sessions',

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://localhost/design-circle',
+	db: process.env.OPENSHIFT_MONGODB_DB_HOST,
 	assets: {
 		lib: {
 			css: [
