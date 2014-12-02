@@ -13,6 +13,9 @@ var _ = require('lodash'),
  * Signup
  */
 exports.signup = function(req, res) {
+	//Signup is disabled
+	
+	/*
 	// For security measurement we remove the roles from the req.body object
 	delete req.body.roles;
 
@@ -43,7 +46,9 @@ exports.signup = function(req, res) {
 				}
 			});
 		}
-	});
+	});*/
+
+ res.status(400).send("Creation of new users is prohibited.");
 };
 
 /**
