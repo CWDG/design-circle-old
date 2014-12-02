@@ -48,7 +48,9 @@ exports.signup = function(req, res) {
 		}
 	});*/
 
- res.status(400).send("Creation of new users is prohibited.");
+ res.status(400).send({
+	 message: "Creation of new users is prohibited."
+ });
 };
 
 /**
