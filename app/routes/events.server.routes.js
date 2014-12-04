@@ -7,12 +7,12 @@ module.exports = function(app) {
 	// Events Routes
 	app.route('/events')
 		.get(events.list)
-		.post(/*users.requiresLogin,*/ events.create);
+		.post(users.requiresLogin, events.create);
 
 	app.route('/events/:eventId')
 		.get(events.read)
-		.put(/*users.requiresLogin,*/ events.hasAuthorization, events.update)
-		.delete(/*users.requiresLogin,*/ events.hasAuthorization, events.delete);
+		.put(users.requiresLogin, events.hasAuthorization, events.update)
+		.delete(users.requiresLogin, events.hasAuthorization, events.delete);
 
 	// Finish by binding the Event middleware
 	app.param('eventId', events.eventByID);
